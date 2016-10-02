@@ -1,7 +1,7 @@
-#definition of commitComment
+#! /bin/bash
 
 sudo git add .
-#get commitComment from input
-#set /p commitComment=Enter comment for commit: 
-sudo git commit evolution.py #-m commitComment
+echo "Set a comment for commit:"
+read commitComment 
+sudo git commit evolution.py -m "$commitComment"
 sudo git push https://github.com/ConTcoN/Evolution
