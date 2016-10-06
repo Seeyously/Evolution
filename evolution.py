@@ -2,10 +2,30 @@
 
 #%%
 
+class Time:
+    def __init__(self):
+        self.currentTime = 0
+    
+    def up(self):
+        self.currentTime += 1
+        
+    def down(self):
+        if self.currentTime > 0:
+            self.currentTime -= 1
+
 class Creature:
-    def __init__(self, numberFingers, numberGeneration):
+    
+    def __init__(self, numberFingers, generation):
         self.numberFingers = numberFingers
-        self.numberGeneration = numberGeneration
+        self.generation = generation
+        self.age = 0
+        self.size = 1
+    
+    def changeAge(self, deltaAge):
+        self.age += deltaAge
+        
+    def rise(self, deltaSize):
+        self.size += deltaSize
 
 #numberGenerations = 0        
 class Generation:
