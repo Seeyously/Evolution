@@ -1,1 +1,1 @@
-#class World
+#!/usr/bin env python3
