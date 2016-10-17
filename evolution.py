@@ -1,12 +1,12 @@
 
 import sys
+
 sys.path.append('/Users/Sophia/Coding/Evolution')
 
 from creature import *
 from generation import *
 from time import *
 from world import *
-
 
 c1 = Creature(5,1)
 c2 = Creature(4,1)
